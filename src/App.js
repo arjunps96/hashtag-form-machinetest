@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+
+import { Route } from "react-router-dom";
+import { Switch } from "react-router";
+
+import "./App.css";
+
+import MainNavigation from "./components/layout/MainNavigation";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import TalentSignup from "./components/TalentSignup/TalentSignup";
+import FanSignup from "./components/FanSignup/FanSignup";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <MainNavigation />
+      <Header />
+      <Switch>
+        <Route to="/fan-signup" exact component={FanSignup} />
+        <Route to="/talent-signup" exact component={TalentSignup} />
+      </Switch>
+      <Footer />
+    </Fragment>
   );
 }
 

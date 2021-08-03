@@ -1,0 +1,154 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+.form .form-group {
+  margin: 0.5rem 0;
+}
+.form .form-group label {
+  margin-bottom: 2.5rem;
+}
+.form .form-group select {
+  border: 2px solid rgb(20, 20, 20);
+  border-radius: 5rem;
+}
+
+.form-input {
+  width: 70%;
+  background-color: rgb(20, 20, 20);
+  width: 700px;
+  border-radius: 5rem;
+}
+
+.form-input input {
+  width: 700px;
+  background-color: rgb(20, 20, 20);
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  color: white;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.form-input input:focus {
+  width: 700px;
+  background-color: rgb(20, 20, 20);
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.form-input select {
+  width: 700px;
+  background-color: rgb(20, 20, 20);
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  color: white;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.form-input select:focus {
+  width: 700px;
+  background-color: rgb(20, 20, 20);
+  border: 3px solid var(--primary-color);
+  border-radius: 5rem;
+  color: white;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.form-input label {
+  width: 700px;
+  background-color: rgb(20, 20, 20);
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  color: white;
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+}
+.form-input:focus {
+  width: 70%;
+  background-color: rgb(20, 20, 20);
+  width: 700px;
+  border-radius: 5rem;
+}
+.form-input ::placeholder {
+  padding: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .form-input {
+    width: 50%;
+  }
+  .form-input input {
+    width: 400px;
+    background-color: rgb(20, 20, 20);
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+  .form-input input:focus {
+    width: 400px;
+    background-color: rgb(20, 20, 20);
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-input select {
+    width: 400px;
+    background-color: rgb(20, 20, 20);
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+  .form-input select:focus {
+    width: 400px;
+    background-color: rgb(20, 20, 20);
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.required:after {
+  content: "*";
+  margin: 0.2rem;
+  color: white;
+}
+.btn-footer {
+  display: flex;
+  margin: 1rem 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn-footer button {
+  background-color: var(--primary-color);
+  color: black;
+  width: inherit;
+  border-radius: 5rem;
+  padding: 10px 10px;
+  border: 1px solid black;
+  width: 200px;
+}
+.btn-footer button :disabled,
+.btn-footer button :hover,
+.btn-footer button .active {
+  background-color: grey;
+  cursor: not-allowed;
+  color: black;
+}
+.btn-footer .check-group {
+  display: flex;
+  margin: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn-footer .terms {
+  color: var(--primary-color);
+}
+
+@media (max-width: 500px) {
+}

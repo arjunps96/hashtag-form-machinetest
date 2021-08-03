@@ -1,0 +1,7 @@
+.label {
+  margin-bottom: 0.5rem;
+}
+.label:after {
+  content: "*";
+  color: white;
+}

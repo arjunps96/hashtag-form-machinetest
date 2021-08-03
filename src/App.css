@@ -1,38 +1,162 @@
 .App {
   text-align: center;
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: rgba(36, 245, 9, 0.877);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  margin: 10px 20px;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgb(20, 20, 20);
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  border-radius: 3%;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(20, 20, 20);
+}
+.form-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.c-btn {
+  padding: 1.25em 1.5em;
+  border: solid 1px var(--primary-color);
+  border-radius: 5rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+.c-btn-group a {
+  text-decoration: none;
+  list-style: none;
+}
+.c-btn-group :active {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: black;
+}
+.c-btn:active,
+.c-btn.active {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: black;
+}
+.c-btn-group {
+  display: inline-flex;
+  margin-top: 5px;
+  border: 1px solid var(--primary-color);
+  overflow: hidden;
+  color: #fff;
+  border-radius: 5rem;
+  justify-content: center;
+  align-content: center;
+}
+.c-btn-group > .c-btn {
+  border-radius: 5rem;
+  border: none;
+}
+.c-btn-group > .c-btn:last-child {
+  border-right: none;
+}
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #333;
+  border-radius: 5rem;
+  width: 55%;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 2rem 0;
+  text-align: center;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+.btn-group {
+  margin: 0 2rem;
+  align-items: center;
+}
+
+.btn-group button {
+  display: inline-block;
+  background-color: rgba(20, 20, 20);
+  border-radius: 5rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 1rem;
+}
+.btn-group button:active,
+.btn-group button.active {
+  background-color: var(--primary-color);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Padding */
+.p {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.py {
+  padding: 0.5rem 0;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Margin */
+.m {
+  margin: 0.5rem;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.my {
+  margin: 0.5rem 0;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
   }
 }
